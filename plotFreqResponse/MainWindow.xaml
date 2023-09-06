@@ -1,0 +1,49 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ProEssentials="clr-namespace:Gigasoft.ProEssentials;assembly=Gigasoft.ProEssentialsWpf" x:Class="System_response_Toolbox.MainWindow"
+        Title="MainWindow" Height="961.5" Width="1272" Visibility="Visible" Background="White" Foreground="#FF341B1B" FontWeight="Bold">
+    <Grid Margin="0,0,482,212">
+        <!--<ProEssentials:PesgoWpf x:Name="graph1" HorizontalAlignment="Left" Height="333" VerticalAlignment="Top" Width="420" Margin="53,10,0,0"/>-->
+        <Button x:Name="plotTimeResponse" Content="Get Time Response" HorizontalAlignment="Left" Margin="491,24,0,0" VerticalAlignment="Top" Width="118" Click="plotTimeResponse_Click"/>
+        <TextBox x:Name="sampleTime" HorizontalAlignment="Left" Height="23" Margin="473,62,0,0" TextWrapping="Wrap" Text="Sampling time" VerticalAlignment="Top" Width="120" TextChanged="sampleTime_TextChanged"/>
+        <TextBox x:Name="finalTime" HorizontalAlignment="Left" Height="23" Margin="613,62,0,0" TextWrapping="Wrap" Text="Time Stop" VerticalAlignment="Top" Width="120" TextChanged="finalTime_TextChanged"/>
+        <TextBox x:Name="Initial_Condition" HorizontalAlignment="Left" Height="23" Margin="550,99,0,0" TextWrapping="Wrap" Text="x(t0)" VerticalAlignment="Top" Width="120" TextChanged="Initial_Condition_TextChanged"/>
+        <Button x:Name="stepResponse" Content="Step response" HorizontalAlignment="Left" Margin="478,141,0,0" VerticalAlignment="Top" Width="118" Click="stepResponse_Click"/>
+        <Button x:Name="sineResponse" Content="Sine reponse" HorizontalAlignment="Left" Margin="613,130,0,0" VerticalAlignment="Top" Width="118" Click="sineResponse_Click"/>
+        <Grid HorizontalAlignment="Left" Height="930" Margin="765,3,-487,-214" VerticalAlignment="Top" Width="504">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="216*"/>
+                <RowDefinition Height="209*"/>
+                <RowDefinition Height="266*"/>
+            </Grid.RowDefinitions>
+            <!--<ProEssentials:PesgoWpf x:Name="freqPlotPhase" HorizontalAlignment="Left" Height="333" VerticalAlignment="Top" Width="420" Margin="32,73,0,0" Grid.Row="1" Grid.RowSpan="2"/>-->
+        </Grid>
+        <!--<ProEssentials:PesgoWpf x:Name="freqPlot" HorizontalAlignment="Left" Height="333" VerticalAlignment="Top" Width="420" Margin="783,24,-500,0"/>-->
+        <Button x:Name="plotBode" Content="Plot Bode Diagram" HorizontalAlignment="Left" Margin="550,208,0,0" VerticalAlignment="Top" Width="134" Click="plotBode_Click"/>
+        <TextBox x:Name="initial_frequency" HorizontalAlignment="Left" Height="23" Margin="473,242,0,0" TextWrapping="Wrap" Text="Initial Frequency" VerticalAlignment="Top" Width="120" TextChanged="initial_frequency_TextChanged"/>
+        <TextBox x:Name="shift_time" HorizontalAlignment="Left" Height="23" Margin="529,270,0,0" TextWrapping="Wrap" Text="Shift time" VerticalAlignment="Top" Width="120" TextChanged="shift_time_TextChanged"/>
+        <TextBox x:Name="final_frequency" HorizontalAlignment="Left" Height="23" Margin="611,242,0,0" TextWrapping="Wrap" Text="Final Frequency" VerticalAlignment="Top" Width="120" TextChanged="final_frequency_TextChanged"/>
+        <Button x:Name="plotFrequencySpectrum" Content="View Frequency Spectrum" HorizontalAlignment="Left" Margin="529,183,0,0" VerticalAlignment="Top" Width="161" Click="plotFrequencySpectrum_Click" Height="20"/>
+        <RichTextBox x:Name="numTF" HorizontalAlignment="Left" Height="65" Margin="132,362,0,0" VerticalAlignment="Top" Width="271" TextChanged="numTF_TextChanged">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Enter Transfer Function"/>
+                </Paragraph>
+            </FlowDocument>
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0" />
+                </Style>
+            </RichTextBox.Resources>
+        </RichTextBox>
+        <Button x:Name="createModel" Content="Create Model" HorizontalAlignment="Left" Margin="427,337,0,0" VerticalAlignment="Top" Width="107" Click="createModel_Click"/>
+        <TextBox x:Name="fSineInp" HorizontalAlignment="Left" Height="23" Margin="613,155,0,0" TextWrapping="Wrap" Text="Freq for sine input" VerticalAlignment="Top" Width="120" TextChanged="fSineInp_TextChanged"/>
+        <Button x:Name="plotTheoricBode" Content="Theoric Bode" HorizontalAlignment="Left" Margin="553,337,0,0" VerticalAlignment="Top" Width="96" Click="plotTheoricBode_Click"/>
+        <TextBox x:Name="wMax" HorizontalAlignment="Left" Height="23" Margin="529,309,0,0" TextWrapping="Wrap" Text="W max (rad/s)" VerticalAlignment="Top" Width="96" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="precision" HorizontalAlignment="Left" Height="23" Margin="630,309,0,0" TextWrapping="Wrap" Text="precision" VerticalAlignment="Top" Width="77" TextChanged="precision_TextChanged"/>
+        <Button x:Name="nicholsChart" Content="Nichols" HorizontalAlignment="Left" Margin="669,348,0,0" VerticalAlignment="Top" Width="75" Click="nicholsChart_Click"/>
+
+    </Grid>
+    
+</Window>

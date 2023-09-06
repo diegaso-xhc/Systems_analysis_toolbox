@@ -1,0 +1,86 @@
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.exe.config
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.exe
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.pdb
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\gigasoft.proessentialswpf.dll
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csprojResolveAssemblyReference.cache
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\MainWindow.baml
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\MainWindow.g.cs
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\App.g.cs
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse_MarkupCompile.cache
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.g.resources
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.Properties.Resources.resources
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.GenerateResource.Cache
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.exe
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.pdb
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\libfftw3-3.dll
+E:\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse_Content.g.cs
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\libfftw3-3.dll
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.exe.config
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.exe
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.pdb
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csprojAssemblyReference.cache
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\MainWindow.baml
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\MainWindow.g.cs
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\App.g.cs
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse_Content.g.cs
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse_MarkupCompile.cache
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.g.resources
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.Properties.Resources.resources
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.GenerateResource.cache
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CoreCompileInputs.cache
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CopyComplete
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.exe
+E:\Last Backup Taiwan\IMPMAE\My Projects\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.pdb
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\libfftw3-3.dll
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.exe.config
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.exe
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.pdb
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.AssemblyReference.cache
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\MainWindow.baml
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\MainWindow.g.cs
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\App.g.cs
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse_Content.g.cs
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse_MarkupCompile.cache
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.g.resources
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.Properties.Resources.resources
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.GenerateResource.cache
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CoreCompileInputs.cache
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CopyComplete
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.exe
+H:\Ab 2022\Learning\Important repos\graphToolsC#\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.pdb
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\bin\Debug\libfftw3-3.dll
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.exe.config
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.exe
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\bin\Debug\plotFreqResponse.pdb
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.AssemblyReference.cache
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\MainWindow.baml
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\MainWindow.g.cs
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\App.g.cs
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse_Content.g.cs
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse_MarkupCompile.cache
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.g.resources
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.Properties.Resources.resources
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.GenerateResource.cache
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CoreCompileInputs.cache
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CopyComplete
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.exe
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\obj\Debug\plotFreqResponse.pdb
+C:\Users\ge97vos\Desktop\Test_code\plotFreqResponse\plotFreqResponse\bin\Debug\gigasoft.proessentialswpf.dll
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\libfftw3-3.dll
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\plotFreqResponse.exe.config
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\plotFreqResponse.exe
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\plotFreqResponse.pdb
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\gigasoft.proessentialswpf.dll
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.AssemblyReference.cache
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\MainWindow.baml
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\MainWindow.g.cs
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\App.g.cs
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse_Content.g.cs
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse_MarkupCompile.cache
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.g.resources
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.Properties.Resources.resources
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.GenerateResource.cache
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CoreCompileInputs.cache
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CopyComplete
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.exe
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.pdb
