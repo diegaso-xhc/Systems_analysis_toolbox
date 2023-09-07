@@ -24,9 +24,11 @@ The repository was developed in C#, using the following software version:
 - OxyPlot (Version 2.1.2) --> Can be installed using NuGet package manager
 - OxyPlot.Wpf.Shared (Version 2.1.2) --> Can be installed using NuGet package manager
 ```
+
 The project has been compiled using the aforementioned libraries into a self contained project. Nevertheless, if some compilation errors arise, please check the aforementioned versions.
 <br />
 The files on the repository are detailed as follows:
+
 ```
 - Microsoft Visual Studio Community 2019 (Version 16.11.29)
 - Target Framework: .NET Framework 4.6.1
@@ -34,6 +36,7 @@ The files on the repository are detailed as follows:
 - OxyPlot (Version 2.1.2) --> Can be installed using NuGet package manager
 - OxyPlot.Wpf.Shared (Version 2.1.2) --> Can be installed using NuGet package manager
 ```
+
 
 
 
