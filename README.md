@@ -12,7 +12,7 @@ Provided that positional motion capture data of a human hand, and of relevant la
 <br /> 
 <br /> 
  <p align="center">
-   <img src="/Visualizations/framework.gif" width="970" />
+   <img src="/Visualizations/Time_response_cursor.png" width="970" />
 </p>
 <sup> *Romero, Javier, Dimitrios Tzionas, and Michael J. Black. "Embodied hands: Modeling and capturing hands and bodies together." ACM Transactions on Graphics (ToG) 36.6 (2017): 1-17.</sup>
 <br />
@@ -30,7 +30,7 @@ Although this repository is easily extendable, it is worth noting that during th
 ```
 
 <p align="center">
-   <img src="/Visualizations/Setup_markers.png" width="400" />
+   <img src="/Visualizations/Frequency_spectrum.PNG" width="400" />
 </p>
  
 <!---
@@ -67,7 +67,7 @@ The contributions of this repository can be summarized as follows:
 Plots of the contact interaction of the subject in a specified frame. Contact surfaces are visible in read. 
 
 <p align="center">
-   <img src="/Visualizations/Frame_visualization.png" width="650" />
+   <img src="/Visualizations/Sine_response.PNG" width="650" />
 </p>
 
 ### Grasping of a cylinder
