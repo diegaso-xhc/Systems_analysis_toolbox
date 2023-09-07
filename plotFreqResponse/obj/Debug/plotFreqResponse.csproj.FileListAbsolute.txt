@@ -70,7 +70,6 @@ C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debu
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\plotFreqResponse.exe.config
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\plotFreqResponse.exe
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\plotFreqResponse.pdb
-C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\gigasoft.proessentialswpf.dll
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.AssemblyReference.cache
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\MainWindow.baml
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\MainWindow.g.cs
@@ -84,3 +83,9 @@ C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debu
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.csproj.CopyComplete
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.exe
 C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\obj\Debug\plotFreqResponse.pdb
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\OxyPlot.dll
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\OxyPlot.Wpf.dll
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\OxyPlot.Wpf.Shared.dll
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\OxyPlot.xml
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\OxyPlot.Wpf.xml
+C:\Users\ge97vos\Desktop\Repos\System_analysis_toolbox\plotFreqResponse\bin\Debug\OxyPlot.Wpf.Shared.xml

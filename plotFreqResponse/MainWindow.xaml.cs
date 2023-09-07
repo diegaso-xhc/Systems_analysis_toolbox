@@ -12,9 +12,13 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Gigasoft.ProEssentials.Enums;
+//using Gigasoft.ProEssentials.Enums;
 using differentialTerms;
 using fftAndIfft;
+
+using OxyPlot;
+using OxyPlot.Series;
+
 
 namespace System_response_Toolbox
 {
@@ -25,38 +29,52 @@ namespace System_response_Toolbox
     {
         public
             double dt;
-            double tf;
-            double x0;
-            double[] input;
-            double[] output;
-            double t0 = 0;
-            double[] x;
-            double[] y;
-            double fSInput; //Frequency for the sine input if chosen
-            DifferentialEquations diff1;
-
+        double tf;
+        double x0;
+        double[] input;
+        double[] output;
+        double t0 = 0;
+        double[] x;
+        double[] y;
+        double fSInput; //Frequency for the sine input if chosen
+        DifferentialEquations diff1;
+        //public double[] x_vec = { 4, 5.42, 6, 7, 8 };
+        //public double[] y_vec = { 4, 5, 6, 7, 8.37 };
         public MainWindow()
         {
-            InitializeComponent();            
+            //InitializeComponent();
             //setupGraphPego();
+
+
+            this.InitializeComponent();
+
+            /*
+            List<DataPoint> points = this.GeneratePoints(5, this.x_vec, this.y_vec);
+            this.PlotModels = new List<PlotModel>
+            {
+                this.GeneratePlotModel(points, "Test first XY plot"),
+            };
+            this.DataContext = this;*/
         }
 
-        private void setupGraphPego()
+        private void visualizeTimeResponse()
         {
+            //this.InitializeComponent();
+
             //double[] x = new double[2];
             //double[] y = new double[3];
             //x[0] = 1; x[1] = 1;
             //y[0] = 1; y[1] = 1; y[2] = 1;            
             this.diff1 = null;
-            this.diff1 = new DifferentialEquations(this.y, this.x);            
+            this.diff1 = new DifferentialEquations(this.y, this.x);
             this.diff1.getTransferFunction();
-            this.diff1.getStateSpace();            
+            this.diff1.getStateSpace();
             //double tf = 10;
             //double dt = 0.001;
-           
-            double xp0 = 0.0;                        
-            
-            
+
+            double xp0 = 0.0;
+
+
             //for (int i = 0; i < (int)input.Length; i++)
             //    input[i] = 1 * Math.Sin(2 * 3.14159 * 1 * (t0 + i * this.dt));
             //for (int i = 0; i < (int)input1.Length; i++)
@@ -69,6 +87,23 @@ namespace System_response_Toolbox
             this.diff1.rungeKutta4thO(this.dt, this.input, this.x0, xp0, out this.output);
             //diff1.rungeKutta4thO(dt, input1, input2, x0, xp0, out output);
 
+            int n = (int)(this.tf / this.dt);
+
+            double[] x_plot = new double[n];
+            double[] y_plot = new double[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                x_plot[i] = (i * this.dt);
+                y_plot[i] = this.output[i];
+            }
+
+            List<DataPoint> points = this.GeneratePoints(n, x_plot, y_plot);
+            this.PlotModels = new List<PlotModel>
+            {
+                this.GeneratePlotModel(points, "Systems Time Response"),
+            };
+            this.DataContext = this;
 
             /*graph1.PeFunction.Reset();
             graph1.PeData.Subsets = 2;
@@ -126,14 +161,14 @@ namespace System_response_Toolbox
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////
             
             graph1.PeFunction.ReinitializeResetImage();            
-            graph1.Invalidate();      */      
+            graph1.Invalidate();      */
 
         }
 
-        
+
         private void plotTimeResponse_Click(object sender, RoutedEventArgs e)
         {
-            setupGraphPego();
+            visualizeTimeResponse();
         }
 
         private void sampleTime_TextChanged(object sender, TextChangedEventArgs e)
@@ -179,9 +214,9 @@ namespace System_response_Toolbox
 
         private void plotFrequencySpectrumFcn()
         {
-            int npoints = (int)(this.tf / this.dt);            
+            int npoints = (int)(this.tf / this.dt);
             double[] amplitude = new double[npoints / 2];
-            double[] freq = new double[npoints / 2];            
+            double[] freq = new double[npoints / 2];
             //for (int i = 0; i < npoints; i++)
             //    this.input[i] = Math.Sin(2 * Math.PI * 100 * i * this.dt) + Math.Sin(2 * Math.PI * 340 * i * this.dt);
             var dft = fastFourierTransform.fFT(this.input, true);
@@ -189,6 +224,23 @@ namespace System_response_Toolbox
                 amplitude[i / 2] = Math.Sqrt(dft[i] * dft[i] + dft[i + 1] * dft[i + 1]);
             for (int i = 0; i < (int)npoints / 2; i++)
                 freq[i] = i / this.tf;
+
+
+            double[] x_plot = new double[npoints / 2];
+            double[] y_plot = new double[npoints / 2];
+
+            for (int i = 0; i < (int)npoints / 2; i++)
+            {
+                x_plot[i] = freq[i];
+                y_plot[i] = amplitude[i];
+            }
+
+            List<DataPoint> points = this.GeneratePoints(npoints / 2, x_plot, y_plot);
+            this.PlotModels = new List<PlotModel>
+            {
+                this.GeneratePlotModel(points, "Frequency Spectrum"),
+            };
+            this.DataContext = this;
             /*
             freqPlot.PeFunction.Reset();
             freqPlot.PeData.Subsets = 1;
@@ -241,10 +293,10 @@ namespace System_response_Toolbox
                 input[i] = 1 * Math.Sin(2 * Math.PI * (fini * i * this.dt + k * (i * this.dt) * (i * this.dt)));
 
             this.diff1 = null;
-            this.diff1 = new DifferentialEquations(this.y, this.x);            
+            this.diff1 = new DifferentialEquations(this.y, this.x);
             this.diff1.getTransferFunction();
-            this.diff1.getStateSpace();            
-            double xp0 = 0.0;            
+            this.diff1.getStateSpace();
+            double xp0 = 0.0;
             this.output = new double[(int)this.input.Length];
             this.diff1.rungeKutta4thO(this.dt, this.input, this.x0, xp0, out this.output);
             int npoints = (int)(this.tf / this.dt);
@@ -260,7 +312,7 @@ namespace System_response_Toolbox
             for (int i = 0; i < npoints; i += 2)
             {
                 amplitudeIn[i / 2] = Math.Sqrt(dft[i] * dft[i] + dft[i + 1] * dft[i + 1]);
-                phaseIn[i / 2] = backupFunctions.angle(dft[i], dft[i + 1]); 
+                phaseIn[i / 2] = backupFunctions.angle(dft[i], dft[i + 1]);
             }
             for (int i = 0; i < (int)npoints / 2; i++)
                 freq[i] = i / (this.tf);
@@ -269,9 +321,9 @@ namespace System_response_Toolbox
             for (int i = 0; i < npoints; i += 2)
             {
                 amplitudeOut[i / 2] = Math.Sqrt(dft[i] * dft[i] + dft[i + 1] * dft[i + 1]);
-                phaseOut[i / 2] = backupFunctions.angle(dft[i], dft[i + 1]); 
+                phaseOut[i / 2] = backupFunctions.angle(dft[i], dft[i + 1]);
             }
-            
+
             double[] phaseInUnw = new double[npoints / 2];
             double[] phaseOutUnw = new double[npoints / 2];
             double[] phaseDiff = new double[npoints / 2];
@@ -372,26 +424,25 @@ namespace System_response_Toolbox
         {
             this.x = null;
             this.y = null;
-            // Create a FlowDocument to contain content for the RichTextBox.            
-            char[] delimiterChars = {'[',',',' ',']','\r','\n'};
+            char[] delimiterChars = { '[', ',', ' ', ']', '\r', '\n' };
             TextRange textRange = new TextRange(numTF.Document.ContentStart, numTF.Document.ContentEnd);
             string text = textRange.Text;
             string[] data = text.Split(delimiterChars);
             data = data.Where(xt => !string.IsNullOrEmpty(xt)).ToArray();
-            int nData = 0;            
+            int nData = 0;
             for (int i = 0; i < data.Length; i++)
             {
                 if (data[i] != ";") nData++;
                 else break;
             }
-            int dData = (data.Length - 1) - nData; 
+            int dData = (data.Length - 1) - nData;
             this.x = new double[nData];
             this.y = new double[dData];
             for (int i = 0; i < data.Length; i++)
             {
                 if (i < nData) x[i] = Convert.ToDouble(data[i]);
-                else if (i > nData ) y[i - nData - 1] = Convert.ToDouble(data[i]);
-            }           
+                else if (i > nData) y[i - nData - 1] = Convert.ToDouble(data[i]);
+            }
         }
 
         private void numTF_TextChanged(object sender, TextChangedEventArgs e)
@@ -405,7 +456,7 @@ namespace System_response_Toolbox
         }
 
         private void thoericBode(double wmax, double prn) //max frequency in rad/s and the precision
-        { 
+        {
 
             int nL = (int)this.x.Length;
             int dL = (int)this.y.Length;
@@ -428,12 +479,12 @@ namespace System_response_Toolbox
                 dRe = new double[dL - 1]; //Getting the number of real roots we will get for the denominator of the Transfer Function
                 dIm = new double[dL - 1]; //Getting the number of imaginary roots we will get for the denominator of the Transfer Function
             }
-            else 
+            else
             {
                 dRe = new double[1];
                 dIm = new double[1];
             }
-            
+
             if (nL >= 2)
             {
                 double px = this.x[0];
@@ -441,7 +492,7 @@ namespace System_response_Toolbox
                     this.x[i] = this.x[i] / px;
                 backupFunctions.getRoots(this.x, out nRe, out nIm);
                 for (int i = 0; i < (int)this.x.Length; i++)
-                    this.x[i] = this.x[i] * px;                
+                    this.x[i] = this.x[i] * px;
             }
             else nRe[0] = this.x[0];
             if (dL >= 2)
@@ -461,7 +512,7 @@ namespace System_response_Toolbox
             double[] ph = new double[wL];
             for (int i = 0; i < wL; i++)
             {
-                nMag[i] = this.x[0]; 
+                nMag[i] = this.x[0];
                 mag[i] = this.y[0];
                 if (this.x[0] >= 0) nPh[i] = 0;
                 else nPh[i] = Math.PI;
@@ -476,7 +527,7 @@ namespace System_response_Toolbox
                     for (int j = 0; j < nL - 1; j++)
                     {
                         nMag[i] *= Math.Sqrt(nRe[j] * nRe[j] + (w - nIm[j]) * (w - nIm[j]));
-                        nPh[i] += backupFunctions.angle(-1.0*nRe[j], (w - nIm[j]));
+                        nPh[i] += backupFunctions.angle(-1.0 * nRe[j], (w - nIm[j]));
                     }
                     i++;
                 }
@@ -486,7 +537,7 @@ namespace System_response_Toolbox
                 int i = 0;
                 for (double w = 0; w < wmax - prn; w += prn)
                 {
-                    nMag[i] = this.x[0]; 
+                    nMag[i] = this.x[0];
                     i++;
                 }
             }
@@ -508,7 +559,7 @@ namespace System_response_Toolbox
                         if (ph[i] > 0) ph[i] -= 360;
                         else ph[i] += 360;
                     }
-                    i++;                    
+                    i++;
                 }
             }
             else
@@ -516,11 +567,11 @@ namespace System_response_Toolbox
                 int i = 0;
                 for (double w = 0; w < wmax - prn; w += prn)
                 {
-                    mag[i] = nMag[i] / this.y[0]; 
-                    i++;                    
+                    mag[i] = nMag[i] / this.y[0];
+                    i++;
                 }
             }
-                
+
             double[] freq = new double[wL];
             for (int i = 0; i < wL; i++)
                 freq[i] = prn * i;
@@ -581,7 +632,7 @@ namespace System_response_Toolbox
             freqPlot.PeFunction.ReinitializeResetImage();            
             freqPlotPhase.Invalidate();
             freqPlot.Invalidate();*/
-            
+
         }
 
         private void getNichols(double wmax, double prn)
@@ -732,12 +783,12 @@ namespace System_response_Toolbox
             graph1.PeFunction.ReinitializeResetImage();
             graph1.Invalidate();*/
         }
-        
+
         private void plotTheoricBode_Click(object sender, RoutedEventArgs e)
         {
             double wM = Convert.ToDouble(wMax.Text);
             double p = Convert.ToDouble(precision.Text);
-            thoericBode(wM, p);            
+            thoericBode(wM, p);
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
@@ -754,7 +805,34 @@ namespace System_response_Toolbox
         {
             double wM = Convert.ToDouble(wMax.Text);
             double p = Convert.ToDouble(precision.Text);
-            getNichols(wM, p);            
+            getNichols(wM, p);
+        }
+
+        private List<DataPoint> GeneratePoints(int numberOfPoints, double[] x, double[] y)
+        {
+            var result = new List<DataPoint>(numberOfPoints);
+            for (int i = 0; i < numberOfPoints; i++)
+                result.Add(new DataPoint(x[i], y[i]));
+            return result;
+        }
+        public List<PlotModel> PlotModels { get; set; }
+        private PlotModel GeneratePlotModel(List<DataPoint> points, string title)
+        {
+            var plotModel = new PlotModel
+            {
+                Title = title,
+                TitleToolTip = title
+            };
+            var lineSeries = new LineSeries();
+            lineSeries.Points.AddRange(points);
+            plotModel.InvalidatePlot(true);
+            plotModel.Series.Add(lineSeries);
+            return plotModel;
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

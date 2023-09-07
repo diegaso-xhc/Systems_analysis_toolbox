@@ -1,17 +1,22 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:ProEssentials="clr-namespace:Gigasoft.ProEssentials;assembly=Gigasoft.ProEssentialsWpf" x:Class="System_response_Toolbox.MainWindow"
-        Title="MainWindow" Height="961.5" Width="1272" Visibility="Visible" Background="White" Foreground="#FF341B1B" FontWeight="Bold">
-    <Grid Margin="0,0,482,212">
+        xmlns:oxy="clr-namespace:OxyPlot.Wpf;assembly=OxyPlot.Wpf"        
+        x:Class="System_response_Toolbox.MainWindow"
+        Title="MainWindow" Height="801" Width="1291.5" Visibility="Visible" Background="White" Foreground="#FF341B1B" FontWeight="Bold">
+    <Grid Margin="180,92,202,79">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="587*"/>
+            <ColumnDefinition Width="295*"/>
+        </Grid.ColumnDefinitions>
         <!--<ProEssentials:PesgoWpf x:Name="graph1" HorizontalAlignment="Left" Height="333" VerticalAlignment="Top" Width="420" Margin="53,10,0,0"/>-->
-        <Button x:Name="plotTimeResponse" Content="Get Time Response" HorizontalAlignment="Left" Margin="491,24,0,0" VerticalAlignment="Top" Width="118" Click="plotTimeResponse_Click"/>
-        <TextBox x:Name="sampleTime" HorizontalAlignment="Left" Height="23" Margin="473,62,0,0" TextWrapping="Wrap" Text="Sampling time" VerticalAlignment="Top" Width="120" TextChanged="sampleTime_TextChanged"/>
-        <TextBox x:Name="finalTime" HorizontalAlignment="Left" Height="23" Margin="613,62,0,0" TextWrapping="Wrap" Text="Time Stop" VerticalAlignment="Top" Width="120" TextChanged="finalTime_TextChanged"/>
-        <TextBox x:Name="Initial_Condition" HorizontalAlignment="Left" Height="23" Margin="550,99,0,0" TextWrapping="Wrap" Text="x(t0)" VerticalAlignment="Top" Width="120" TextChanged="Initial_Condition_TextChanged"/>
-        <Button x:Name="stepResponse" Content="Step response" HorizontalAlignment="Left" Margin="478,141,0,0" VerticalAlignment="Top" Width="118" Click="stepResponse_Click"/>
-        <Button x:Name="sineResponse" Content="Sine reponse" HorizontalAlignment="Left" Margin="613,130,0,0" VerticalAlignment="Top" Width="118" Click="sineResponse_Click"/>
-        <Grid HorizontalAlignment="Left" Height="930" Margin="765,3,-487,-214" VerticalAlignment="Top" Width="504">
+        <Button x:Name="plotTimeResponse" Content="Get Time Response" HorizontalAlignment="Left" Margin="523,310,0,0" VerticalAlignment="Top" Width="161" Click="plotTimeResponse_Click" Grid.ColumnSpan="2" Height="20"/>
+        <TextBox x:Name="sampleTime" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="22" Margin="422,136,0,0" TextWrapping="Wrap" Text="Sampling time" VerticalAlignment="Top" Width="120" TextChanged="sampleTime_TextChanged"/>
+        <TextBox x:Name="finalTime" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="22" Margin="105,136,0,0" TextWrapping="Wrap" Text="Time Stop" VerticalAlignment="Top" Width="120" TextChanged="finalTime_TextChanged" Grid.Column="1"/>
+        <TextBox x:Name="Initial_Condition" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="22" Margin="562,136,0,0" TextWrapping="Wrap" Text="x(t0)" VerticalAlignment="Top" Width="120" TextChanged="Initial_Condition_TextChanged" Grid.ColumnSpan="2"/>
+        <Button x:Name="stepResponse" Content="Step response" HorizontalAlignment="Left" Margin="20,264,0,0" VerticalAlignment="Top" Width="118" Click="stepResponse_Click" Grid.Column="1" Height="20"/>
+        <Button x:Name="sineResponse" Content="Sine reponse" HorizontalAlignment="Left" Margin="20,226,0,0" VerticalAlignment="Top" Width="118" Click="sineResponse_Click" Grid.Column="1" Height="20"/>
+        <Grid HorizontalAlignment="Left" Height="930" Margin="168,3,-377,-320" VerticalAlignment="Top" Width="504" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="216*"/>
                 <RowDefinition Height="209*"/>
@@ -20,12 +25,12 @@
             <!--<ProEssentials:PesgoWpf x:Name="freqPlotPhase" HorizontalAlignment="Left" Height="333" VerticalAlignment="Top" Width="420" Margin="32,73,0,0" Grid.Row="1" Grid.RowSpan="2"/>-->
         </Grid>
         <!--<ProEssentials:PesgoWpf x:Name="freqPlot" HorizontalAlignment="Left" Height="333" VerticalAlignment="Top" Width="420" Margin="783,24,-500,0"/>-->
-        <Button x:Name="plotBode" Content="Plot Bode Diagram" HorizontalAlignment="Left" Margin="550,208,0,0" VerticalAlignment="Top" Width="134" Click="plotBode_Click"/>
-        <TextBox x:Name="initial_frequency" HorizontalAlignment="Left" Height="23" Margin="473,242,0,0" TextWrapping="Wrap" Text="Initial Frequency" VerticalAlignment="Top" Width="120" TextChanged="initial_frequency_TextChanged"/>
-        <TextBox x:Name="shift_time" HorizontalAlignment="Left" Height="23" Margin="529,270,0,0" TextWrapping="Wrap" Text="Shift time" VerticalAlignment="Top" Width="120" TextChanged="shift_time_TextChanged"/>
-        <TextBox x:Name="final_frequency" HorizontalAlignment="Left" Height="23" Margin="611,242,0,0" TextWrapping="Wrap" Text="Final Frequency" VerticalAlignment="Top" Width="120" TextChanged="final_frequency_TextChanged"/>
-        <Button x:Name="plotFrequencySpectrum" Content="View Frequency Spectrum" HorizontalAlignment="Left" Margin="529,183,0,0" VerticalAlignment="Top" Width="161" Click="plotFrequencySpectrum_Click" Height="20"/>
-        <RichTextBox x:Name="numTF" HorizontalAlignment="Left" Height="65" Margin="132,362,0,0" VerticalAlignment="Top" Width="271" TextChanged="numTF_TextChanged">
+        <Button x:Name="plotBode" Content="Plot Bode Diagram" HorizontalAlignment="Left" Margin="523,456,0,0" VerticalAlignment="Top" Width="161" Click="plotBode_Click" Height="20" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="initial_frequency" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="22" Margin="422,422,0,0" TextWrapping="Wrap" Text="Initial Frequency" VerticalAlignment="Top" Width="120" TextChanged="initial_frequency_TextChanged"/>
+        <TextBox x:Name="shift_time" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="22" Margin="105,422,0,0" TextWrapping="Wrap" Text="Shift time" VerticalAlignment="Top" Width="120" TextChanged="shift_time_TextChanged" Grid.Column="1"/>
+        <TextBox x:Name="final_frequency" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="22" Margin="562,422,0,0" TextWrapping="Wrap" Text="Final Frequency" VerticalAlignment="Top" Width="120" TextChanged="final_frequency_TextChanged" Grid.ColumnSpan="2"/>
+        <Button x:Name="plotFrequencySpectrum" Content="View Frequency Spectrum" HorizontalAlignment="Left" Margin="523,340,0,0" VerticalAlignment="Top" Width="161" Click="plotFrequencySpectrum_Click" Height="20" Grid.ColumnSpan="2"/>
+        <RichTextBox x:Name="numTF" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="24" Margin="422,56,0,0" VerticalAlignment="Top" Width="268" TextChanged="numTF_TextChanged" Grid.ColumnSpan="2">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="Enter Transfer Function"/>
@@ -37,13 +42,48 @@
                 </Style>
             </RichTextBox.Resources>
         </RichTextBox>
-        <Button x:Name="createModel" Content="Create Model" HorizontalAlignment="Left" Margin="427,337,0,0" VerticalAlignment="Top" Width="107" Click="createModel_Click"/>
-        <TextBox x:Name="fSineInp" HorizontalAlignment="Left" Height="23" Margin="613,155,0,0" TextWrapping="Wrap" Text="Freq for sine input" VerticalAlignment="Top" Width="120" TextChanged="fSineInp_TextChanged"/>
-        <Button x:Name="plotTheoricBode" Content="Theoric Bode" HorizontalAlignment="Left" Margin="553,337,0,0" VerticalAlignment="Top" Width="96" Click="plotTheoricBode_Click"/>
-        <TextBox x:Name="wMax" HorizontalAlignment="Left" Height="23" Margin="529,309,0,0" TextWrapping="Wrap" Text="W max (rad/s)" VerticalAlignment="Top" Width="96" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox x:Name="precision" HorizontalAlignment="Left" Height="23" Margin="630,309,0,0" TextWrapping="Wrap" Text="precision" VerticalAlignment="Top" Width="77" TextChanged="precision_TextChanged"/>
-        <Button x:Name="nicholsChart" Content="Nichols" HorizontalAlignment="Left" Margin="669,348,0,0" VerticalAlignment="Top" Width="75" Click="nicholsChart_Click"/>
+        <Button x:Name="createModel" Content="Create Model" HorizontalAlignment="Left" Margin="117,56,0,0" VerticalAlignment="Top" Width="108" Click="createModel_Click" Grid.Column="1" Height="24"/>
+        <TextBox x:Name="fSineInp" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="22" Margin="461,226,0,0" TextWrapping="Wrap" Text="Freq for sine input" VerticalAlignment="Top" Width="120" TextChanged="fSineInp_TextChanged"/>
+        <Button x:Name="plotTheoricBode" Content="Theoric Bode" HorizontalAlignment="Left" Margin="435,567,0,0" VerticalAlignment="Top" Width="159" Click="plotTheoricBode_Click" Height="20"/>
+        <TextBox x:Name="wMax" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="24" Margin="468,532,0,0" TextWrapping="Wrap" Text="W max (rad/s)" VerticalAlignment="Top" Width="96" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="precision" BorderThickness="3" BorderBrush="DarkBlue" HorizontalAlignment="Left" Height="24" Margin="36,532,0,0" TextWrapping="Wrap" Text="Resolution (freq)" VerticalAlignment="Top" Width="118" TextChanged="precision_TextChanged" Grid.Column="1"/>
+        <Button x:Name="nicholsChart" Content="Nichols" HorizontalAlignment="Left" Margin="20,567,0,0" VerticalAlignment="Top" Width="157" Click="nicholsChart_Click" Height="20" Grid.Column="1"/>
+
+        <ItemsControl ItemsSource="{Binding PlotModels}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="0,98,204,129" RenderTransformOrigin="0.494,0.513">
+            <ItemsControl.Template>
+                <ControlTemplate>
+                    <Border BorderThickness="{TemplateBinding Border.BorderThickness}"
+                                        Padding="{TemplateBinding Control.Padding}"
+                                        BorderBrush="{TemplateBinding Border.BorderBrush}"
+                                        Background="{TemplateBinding Panel.Background}"
+                                        SnapsToDevicePixels="True">
+                        <ScrollViewer Padding="{TemplateBinding Control.Padding}" Focusable="False">
+                            <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ItemsControl.Template>
+
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel IsVirtualizing="True" IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <oxy:PlotView Model="{Binding}" Height="350" />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <TextBox BorderThickness="0" BorderBrush="Black" HorizontalAlignment="Left" Height="48" Margin="219,-70,0,0" TextWrapping="Wrap" Text="Systems Analysis Toolbox" VerticalAlignment="Top" Width="451" IsReadOnly="True" FontSize="36" RenderTransformOrigin="0.669,0.083" Grid.ColumnSpan="2"/>
+        <TextBox BorderThickness="0" BorderBrush="Black" HorizontalAlignment="Left" Height="28" Margin="430,98,0,0" TextWrapping="Wrap" Text="Please input the sampling time, initial and final time:" VerticalAlignment="Top" Width="400" IsReadOnly="True" RenderTransformOrigin="0.669,0.083" FontSize="15" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged"/>
+        <TextBox BorderThickness="0" BorderBrush="Black" HorizontalAlignment="Left" Height="28" Margin="420,10,0,0" TextWrapping="Wrap" Text="Please input the transfer function and press create model" VerticalAlignment="Top" Width="421" IsReadOnly="True" RenderTransformOrigin="0.669,0.083" FontSize="15" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged"/>
+        <TextBox BorderThickness="0" BorderBrush="Black" HorizontalAlignment="Left" Height="40" Margin="430,175,0,0" TextWrapping="Wrap" Text="Please select your excitation function (add a frequency for the sine function:" VerticalAlignment="Top" Width="400" IsReadOnly="True" RenderTransformOrigin="0.669,0.083" FontSize="15" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged"/>
+        <TextBox BorderThickness="0" BorderBrush="Black" HorizontalAlignment="Left" Height="40" Margin="428,372,0,0" TextWrapping="Wrap" Text="Use the following to plot a bode diagram using the output signals of excitation inputs. This simulates a real system behavior." VerticalAlignment="Top" Width="400" IsReadOnly="True" RenderTransformOrigin="0.669,0.083" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged"/>
+        <TextBox BorderThickness="0" BorderBrush="Black" HorizontalAlignment="Left" Height="40" Margin="430,487,0,0" TextWrapping="Wrap" Text="Plot the theoretic Bode and Nichols plot of your given system. Here the provided model is used directly." VerticalAlignment="Top" Width="400" IsReadOnly="True" RenderTransformOrigin="0.669,0.083" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged"/>
+
 
     </Grid>
-    
+
 </Window>
