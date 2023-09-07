@@ -63,15 +63,24 @@ The contributions of this repository can be summarized as follows:
 
 ## Examples of GUI usage
 
-### Visualization of human hand-object interaction
+### Time response to a Sine-wave-like excitement signal
 
-Plots of the contact interaction of the subject in a specified frame. Contact surfaces are visible in read. 
+The following figure shows the time response of a system to a sine wave excitement signal of 4Hz. Note that in order to obtain the time response, the user needs to do the following:
+
+```
+- Input the transfer function: [numerator separated by commas];[denominator separated by commas]
+- Click on Create Model
+- Input the sampling time (dt), initial time (t(t0)), and final time in seconds.
+- If the user requires a step response, click on Step response. For sine wave excitements, please input the frequency of the sine wave and click on Sine response.
+- The user can then click on get time response or view frequency spectrum.
+- Although visualizations are not available at the moment for Bode and Nichols charts, the user can still click them and extract the frequency responses from the library.
+```
 
 <p align="center">
    <img src="/Visualizations/Sine_response.PNG" width="650" />
 </p>
 
-### Grasping of a cylinder
+### Time response to a Sine-wave-like excitement signal
 
 <p align="center">
    <img src="/Visualizations/Frequency_spectrum.PNG" width="400" />
