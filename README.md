@@ -67,7 +67,7 @@ The following figure shows the time response of a system to a sine wave exciteme
 - Input the sampling time (dt), initial time (t(t0)), and final time in seconds.
 - If the user requires a step response, click on Step response. For sine wave excitements, please input the frequency of the sine wave and click on Sine response.
 - The user can then click on get time response or view frequency spectrum.
-- Although visualizations are not available at the moment for Bode and Nichols charts, the user can still click them and extract the frequency responses from the library.
+- Although visualizations for Bode and Nichols charts are not available at the moment, the user can still click them and extract the frequency responses from the library.
 ```
 
 <p align="center">
@@ -76,11 +76,15 @@ The following figure shows the time response of a system to a sine wave exciteme
 
 ### Time response to a Step-like excitement signal
 
+The following figure shows the time response of a system to a step-like excitement signal:
+
 <p align="center">
   <img src="/Visualizations/Systems_time_response.PNG" width="650" />  
 </p>
 
 ### Frequency spectrum of the input signal
+
+The following figure shows the frequency spectrum of an input sine-wave-like signal of 52Hz:
 
 <p align="center">
    <img src="/Visualizations/Frequency_spectrum.PNG" width="650" />
