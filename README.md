@@ -49,9 +49,9 @@ The contributions of this repository can be summarized as follows:
 
 ```
 - Algorithms for handling differential equations, transfer functions, and state space representations
-- Algorithms to manipulate matrix in an intuitive and efficient manner
+- Algorithms to manipulate matrices in an intuitive and efficient manner
 - Algorithms to operate on system response parameters (e.g. angle, phase, etc.)
-- An intuitive GUI (with similar nomenclature as MATLAB for transfer functions) to check systems time and frequency response
+- An intuitive GUI (with similar nomenclature as MATLAB for transfer functions) to analyze systems time and frequency response
 - An open source code, which can be used for teaching of fundamentals of control systems.
 ```
 
