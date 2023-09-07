@@ -32,7 +32,9 @@ The project has been compiled using the aforementioned libraries into a self con
 
 ```
 - backupFunctions.cs --> Contains classes and methods to manipulate parameters within system modeling, such as raw phase and angle vectors extracted from a system's response.
-- DifferentialEquations.cs --> Contains classes and methods to manipulate system model representations (e.g. from transfer functions to state space representations, or to differential equations). It also contains Runge–Kutta methods for finding approximate solutions of nonlinear equations. Additionally, it contains functions for transfer functions algorithmics (e.g. series, or feedback loops). Finally, it contains print functions specifically tailored to each one of the system model representations (e.g. state space).
+- DifferentialEquations.cs --> Contains classes and methods to manipulate system model representations (e.g. from transfer functions to state space representations, or to differential equations).
+It also contains Runge–Kutta methods for finding approximate solutions of nonlinear equations. Additionally, it contains functions for transfer functions algorithmics (e.g. series, or feedback loops).
+Finally, it contains print functions specifically tailored to each one of the system model representations (e.g. state space).
 - fastFourierTransform.cs --> Contains classes and methods to transform time space vectors into the frequency (fast Fourier transform) and viceversa (inverse fast Fourier transform).
 - Matrix.cs --> Contains classes and methods to manipulate matrices in an efficient manner.
 - MainWindow.xaml --> Contains the code required by WPF to launch the GUI for the user.
