@@ -13,7 +13,7 @@ Provided that positional motion capture data of a human hand, and of relevant la
 <br /> 
 <br /> 
  <p align="center">
-   <img src="/Visualizations/Time_response_cursor.png" width="970" />
+   <img src="/Visualizations/Time_response_cursor.png" width="700" />
 </p>
 <sup> *Romero, Javier, Dimitrios Tzionas, and Michael J. Black. "Embodied hands: Modeling and capturing hands and bodies together." ACM Transactions on Graphics (ToG) 36.6 (2017): 1-17.</sup>
 <br />
