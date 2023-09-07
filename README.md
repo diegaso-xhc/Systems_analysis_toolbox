@@ -31,15 +31,9 @@ The repository was developed in C#, using the following software version:
 The project has been compiled using the aforementioned libraries into a self contained project. Nevertheless, if some compilation errors arise, please check the aforementioned versions. The most relevant files on the repository are detailed as follows:
 
 ```
-- backupFunctions.cs --> Operates on parameters within system modeling, such as
-raw phase and angle vectors extracted from a system's response.
-- DifferentialEquations.cs --> Handles system model representations (e.g. from
-transfer functions to state space representations, or to differential equations). It also contains Runge–Kutta methods
-for finding approximate solutions of nonlinear equations. Additionally, it contains functions for transfer functions
-algorithmics (e.g. series, or feedback loops). Finally, it contains print functions specifically tailored to each one
-of the system model representations (e.g. state space).
-- fastFourierTransform.cs --> Transforms time space vectors into the frequency
-(fast Fourier transform) and viceversa (inverse fast Fourier transform).
+- backupFunctions.cs --> Operates on parameters within system modeling, such as raw phase and angle vectors extracted from a system's response.
+- DifferentialEquations.cs --> Handles system model representations, transfer functions arithmetics, contains Runge–Kutta methods, prints different model representations of a system.
+- fastFourierTransform.cs --> Transforms time space vectors into the frequency (fast Fourier transform) and viceversa (inverse fast Fourier transform).
 - Matrix.cs --> Handles matrices in an efficient manner.
 - MainWindow.xaml --> Contains the code required by WPF to launch the GUI for the user.
 - MainWindow.xaml.cs --> Handles user requests and returns required outputs.
