@@ -9,16 +9,35 @@ Several high performance platforms (e.g. Matlab) offer a control systems toolbox
 This toolbox was used on for the development of the <a href="https://www.sciencedirect.com/science/article/pii/S2212827117302305">scientific article</a>, which shows an approach to reduce inaccuracies on five-axis CNCs.
 <br /> 
 <br /> 
-Provided that positional motion capture data of a human hand, and of relevant landmarks of objects are available, this repository allows the digital reproduction of the interaction, as it can be seen below:
-<br /> 
-<br /> 
  <p align="center">
    <img src="/Visualizations/Time_response_cursor.png" width="700" />
 </p>
-<sup> *Romero, Javier, Dimitrios Tzionas, and Michael J. Black. "Embodied hands: Modeling and capturing hands and bodies together." ACM Transactions on Graphics (ToG) 36.6 (2017): 1-17.</sup>
 <br />
-Here, a tailored human hand motion capture session can be represented virtually, via the usage of .obj/.stl files of the objects being manipulated, the human hand MANO model*, and this repository's algorithms.
- 
+
+## Understanding repository
+
+The repository was developed in C#, using the following software version:
+```
+- Microsoft Visual Studio Community 2019 (Version 16.11.29)
+- Target Framework: .NET Framework 4.6.1
+- OxyPlot.Wpf (Version 2.1.2) --> Can be installed using NuGet package manager
+- OxyPlot (Version 2.1.2) --> Can be installed using NuGet package manager
+- OxyPlot.Wpf.Shared (Version 2.1.2) --> Can be installed using NuGet package manager
+```
+The project has been compiled using the aforementioned libraries into a self contained project. Nevertheless, if some compilation errors arise, please check the aforementioned versions.
+<br />
+The files on the repository are detailed as follows:
+```
+- Microsoft Visual Studio Community 2019 (Version 16.11.29)
+- Target Framework: .NET Framework 4.6.1
+- OxyPlot.Wpf (Version 2.1.2) --> Can be installed using NuGet package manager
+- OxyPlot (Version 2.1.2) --> Can be installed using NuGet package manager
+- OxyPlot.Wpf.Shared (Version 2.1.2) --> Can be installed using NuGet package manager
+```
+
+
+
+
 ## Experimental setup for repository
 
 Although this repository is easily extendable, it is worth noting that during the development of this code a given fixed setup was used. The setup consisted of:
