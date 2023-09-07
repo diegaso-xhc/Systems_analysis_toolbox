@@ -80,33 +80,16 @@ The following figure shows the time response of a system to a sine wave exciteme
    <img src="/Visualizations/Sine_response.PNG" width="650" />
 </p>
 
-### Time response to a Sine-wave-like excitement signal
+### Time response to a Step-like excitement signal
 
 <p align="center">
-   <img src="/Visualizations/Frequency_spectrum.PNG" width="400" />
+  <img src="/Visualizations/Systems_time_response.PNG" width="650" />  
 </p>
 
-Plots of object with contact surfaces for grasping analysis. Contact surfaces are visible in red.
+### Frequency spectrum of the input signal
 
 <p align="center">
-  <img src="/Visualizations/grasp_cylinder.png" width="550" />  
-</p>
-
-### Grasping of a wine glass and a cup
-
-Digital representation of the manipulation of a wine glass and a cup.
-
-<p align="center">
-  <img src="/Visualizations/grasp_wine_glass.gif" width="342" />
-  <img src="/Visualizations/grasp_cup.gif" width="575" />   
-</p>
-
-### Contact surfaces with different hand parameters
-
-A generic and a customized hand models were used to calculate the contact surfaces during the human manipulation recording. It can be seen that the hand model parameters play a role on the accuracy of the contact surfaces.
-
-<p align="center">
-  <img src="/Visualizations/Contact_surface_diff.PNG" width="600" />  
+   <img src="/Visualizations/Frequency_spectrum.PNG" width="650" />
 </p>
 
 ## License
