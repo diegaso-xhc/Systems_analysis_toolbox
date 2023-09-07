@@ -31,21 +31,21 @@ The repository was developed in C#, using the following software version:
 The project has been compiled using the aforementioned libraries into a self contained project. Nevertheless, if some compilation errors arise, please check the aforementioned versions. The most relevant files on the repository are detailed as follows:
 
 ```
-- backupFunctions.cs --> Contains classes and methods to manipulate parameters within system modeling, such as
+- backupFunctions.cs --> Operates on parameters within system modeling, such as
 raw phase and angle vectors extracted from a system's response.
 <br />
-- DifferentialEquations.cs --> Contains classes and methods to manipulate system model representations (e.g. from
+- DifferentialEquations.cs --> Handles system model representations (e.g. from
 transfer functions to state space representations, or to differential equations). It also contains Runge–Kutta methods
 for finding approximate solutions of nonlinear equations. Additionally, it contains functions for transfer functions
 algorithmics (e.g. series, or feedback loops). Finally, it contains print functions specifically tailored to each one
 of the system model representations (e.g. state space).
 <br />
-- fastFourierTransform.cs --> Contains classes and methods to transform time space vectors into the frequency
+- fastFourierTransform.cs --> Transforms time space vectors into the frequency
 (fast Fourier transform) and viceversa (inverse fast Fourier transform).
 <br />
-- Matrix.cs --> Contains classes and methods to manipulate matrices in an efficient manner.
+- Matrix.cs --> Handles matrices in an efficient manner.
 - MainWindow.xaml --> Contains the code required by WPF to launch the GUI for the user.
-- MainWindow.xaml.cs --> Contains classes and methods to handle the requests of the user and return the required outputs.
+- MainWindow.xaml.cs --> Handles user requests and returns required outputs.
 ```
 <br />
 UPDATE (09.2023): Due to a recent change of the chart visualization library, it is worth noticing at the moment only the time response and frequency spectrum can be displayed graphically. The authors are currently updating the Bode and Nichols diagrams. Nevertheless, besides visualization, all functions are implemented and fully functional. The user simply needs to print the outputs or create methods to use them.
