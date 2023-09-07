@@ -49,49 +49,19 @@ UPDATE (09.2023): Due to a recent change of the chart visualization library, it 
 <br />
 <br />
 
-## Experimental setup for repository
-
-Although this repository is easily extendable, it is worth noting that during the development of this code a given fixed setup was used. The setup consisted of:
-
-```
-- VICON motion tracking capture with 16 IR-cameras
-- 12 purposely selected 3D-printed (PLA) objects
-- Artec Eva Lite 3D - Scanner
-- 26 4-mm marker hand setup (see image below)
-```
-
-<p align="center">
-   <img src="/Visualizations/Frequency_spectrum.PNG" width="400" />
-</p>
- 
-<!---
-your comment goes here
-and here
-![This is an image](/Visualizations/vis_1.png)
-![This is an image](/Visualizations/grasp_wine_glass.gif) ![This is an image](/Visualizations/grasp_cup.gif)
-<img src = "/Visualizations/grasp_wine_glass.gif" width="400"> <img src = "/Visualizations/grasp_cup.gif" width="570">
-
--->
-</div>
-
-Nevertheless, the contributions of our work provide tools to extend our results to different setups, provided that changes are made on the pertinent locations. If you are not sure how to do so, please contact the author (see details below).
-
 ## Contributions
 
 The contributions of this repository can be summarized as follows:
 
 ```
-- A library for post processing and visualization of motion capture data --> HMCL_lib
-- A set of purposely selected objects, which guarantee grasping postures variability --> Info_objects
-- Algorithms to track known 3D objects with random marker placements --> Track_object_lib
-- Algorithms for mesh manipulation --> Mesh_Manip_lib
-- Pseudonymized data from trials (saved as Study objects, see HMCL_lib) --> Trials
-- Algorithms to calculate contact surfaces information betwen a hand mesh and an object mesh --> see main
-- Python algorithms to handle the MANO model, including marker position optimization --> fit_MANO (Developed in 
-  cooperation with Omid Taheri (https://is.mpg.de/person/otaheri).
+- Algorithms for handling differential equations, transfer functions, and state space representations
+- Algorithms to manipulate matrix in an intuitive and efficient manner
+- Algorithms to operate on system response parameters (e.g. angle, phase, etc.)
+- An intuitive GUI (with similar nomenclature as MATLAB for transfer functions) to check systems time and frequency response
+- An open source code, which can be used for teaching of fundamentals of control systems.
 ```
 
-## Examples of hand-object contact level human manipulation
+## Examples of GUI usage
 
 ### Visualization of human hand-object interaction
 
@@ -102,6 +72,10 @@ Plots of the contact interaction of the subject in a specified frame. Contact su
 </p>
 
 ### Grasping of a cylinder
+
+<p align="center">
+   <img src="/Visualizations/Frequency_spectrum.PNG" width="400" />
+</p>
 
 Plots of object with contact surfaces for grasping analysis. Contact surfaces are visible in red.
 
