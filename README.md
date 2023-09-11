@@ -1,6 +1,6 @@
 # Systems analysis toolbox
 
-## Overview of the repostitory
+## Overview of the repository
 <div align="justify">
 Simulating systems response is crucial to understand them and to develop suitable controllers depending on application requirements. For instance in 5-axis CNCs, the control parameters used for each one of their axes could have a considerable impact on the overall manufacturing accuracy. Likewise, in certain robotics applications, controllers need to operate with high precision. 
 <br />
